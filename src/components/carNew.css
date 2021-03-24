@@ -1,0 +1,35 @@
+.carContainer{
+    width: 100%; 
+    overflow: visible; 
+    position: absolute;
+    top: 75vh;
+    z-index: -1;
+}
+
+.car{
+    position: relative; 
+    right: -100px;
+    width: 100px;
+    animation: CarSlide infinite;
+        -webkit-animation: CarSlide infinite; 
+        -moz-animation: CarSlide infinite;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-duration: 10s;
+}
+  
+@keyframes CarSlide {
+    from {
+        position: absolute; 
+        right: -100%;
+    } 
+    to {
+        position: absolute; 
+        right: 100%;
+    }
+}
+  
+  
+  

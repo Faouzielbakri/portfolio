@@ -1,0 +1,33 @@
+.aircraftContainer {
+    width: 100vh; 
+    overflow: visible; 
+    position: absolute;
+    top: 25vh;
+    z-index: -1;
+}
+  
+.aircraft {
+    position: relative; 
+    left: -40px;
+    text-align: center; 
+    width: 20px;
+    animation: AircraftSlide infinite;
+        -webkit-animation: AircraftSlide infinite; 
+        -moz-animation: AircraftSlide infinite;
+        -webkit-animation-fill-mode: forwards;
+        -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    animation-duration: 20s;
+}
+  
+@keyframes AircraftSlide {
+    from {
+        position: absolute; 
+        left: -20px;
+    } 
+    to {
+        position: absolute; 
+        left: 2000px;;
+    }
+}
