@@ -26,7 +26,7 @@ export default class About extends Component {
                       <b>Location:</b> Ait Melloul, Agadir
                     </li>
                     <li>
-                      <b>Occupation:</b> Web Developer{" "}
+                      <b>Occupation:</b> Software Developer{" "}
                     </li>
                   </ul>
                 </div>
