@@ -37,17 +37,5 @@ export const projectData = [
     date_created: "Febuary 2021",
     link: "https://www.Faouzielbakri.ga",
     github: "https://github.com/faouzielbakri/portfolio",
-  },
-  {
-    title: "Todos",
-    description: `This single-page to-do application features a
-        fluid user interface that allows users to rapidly add dynamic content
-        and create to-do lists.`,
-    technologies:
-      "React, Ruby on Rails, PostgresDB, JavaScript, CSS, HTML, GitHub, Heroku",
-    image: todos,
-    date_created: "August 2020",
-    link: "https://todoster-nm.herokuapp.com",
-    github: "https://github.com/faouzielbakri/todo",
-  },
+  }
 ];
