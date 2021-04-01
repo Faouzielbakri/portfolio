@@ -17,6 +17,7 @@ export default class Project extends Component {
                   src={this.props.data.image}
                   className="img-fluid project-image"
                   alt="project"
+                  // style={{ background_image: `url(${this.props.data.image})` }}
                 />
               </a>
             </div>

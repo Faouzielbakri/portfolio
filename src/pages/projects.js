@@ -20,7 +20,7 @@ export default class Projects extends Component {
 
   render() {
     const selectedProject = this.state.projectID;
-
+    // console.log(projectData);
     return (
       <div className="col-xs-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2 mb-5 pb-5">
         <div className="row justify-content-center pb-4">
