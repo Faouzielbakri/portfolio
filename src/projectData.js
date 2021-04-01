@@ -1,4 +1,4 @@
-import todos from "./images/projects/todoster.png";
+// import todos from "./images/projects/todoster.png";
 import portfolio from "./images/projects/portfolio.png";
 import flixer from "./images/projects/flixer.png";
 
