@@ -13,10 +13,11 @@ export default class Project extends Component {
           <div className="col-xs-12 col-md-6">
             <div class="pb-4">
               <a target="_blank" href={this.props.data.link} rel="noreferrer">
+                {console.log(this.props.data.image)}
                 <img
                   src={this.props.data.image}
                   className="img-fluid project-image"
-                  alt="project"
+                  alt={`${this.props.data.title}`}
                   // style={{ background_image: `url(${this.props.data.image})` }}
                 />
               </a>

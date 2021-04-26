@@ -1,23 +1,28 @@
 // import todos from "./images/projects/todoster.png";
 import portfolio from "./images/projects/portfolio.png";
 import metflixy from "./images/projects/metflixy.png";
-import My_google from "./images/projects/My_google.PNG";
+import my_google from "./images/projects/my_google.png";
+import prostudent from "./images/projects/prostudent.png";
 import db from "./firebase";
 
 // console.log(metflixy);
 const images = {
-  Portfolio: portfolio,
-  My_google: My_google,
+  portfolio: portfolio,
+  my_google: my_google,
   metflixy: metflixy,
+  prostudent: prostudent,
 };
-// const Data = db.collection("projects");
-// let projectData = [];
+
 const me = (async () => {
   const project = await db
     .collection("projects")
     .get()
     .then((data) => {
       return data.docs.map((doc) => {
+        console.log(
+          images[doc.data().title?.replace(" ", "_").toLowerCase()],
+          doc.data().title?.toLowerCase()
+        );
         return {
           ...doc.data(),
           date_created: doc
@@ -25,6 +30,7 @@ const me = (async () => {
             .date_created.toDate()
             .toISOString()
             .slice(0, 10),
+          image: images[doc.data().title?.replace(" ", "_").toLowerCase()],
         };
       });
     });
@@ -34,10 +40,8 @@ const me = (async () => {
 let projectDatas = [];
 me.then((data) => {
   projectData = data.map((obj) => {
-    return {
-      ...obj,
-      image: images[obj.title.replace(" ", "_")] || images["metflixy"],
-    };
+    console.log(obj);
+    return obj;
   });
 });
 export let projectData = projectDatas;
